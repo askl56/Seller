@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/mongoid/mongoid.git
+  revision: 70453659ca4eb26d00adc5aead28d5e6b66b21b3
+  specs:
+    mongoid (4.0.2)
+      activemodel (~> 4.0)
+      moped (~> 2.0.0)
+      origin (~> 2.1)
+      tzinfo (>= 0.3.37)
+
 PATH
   remote: .
   specs:
@@ -43,7 +53,9 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    bson (2.3.0)
     builder (3.2.2)
+    connection_pool (2.2.0)
     erubis (2.7.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
@@ -56,8 +68,14 @@ GEM
     mime-types (2.5)
     mini_portile (0.6.2)
     minitest (5.6.1)
+    moped (2.0.4)
+      bson (~> 2.2)
+      connection_pool (~> 2.0)
+      optionable (~> 0.2.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    optionable (0.2.0)
+    origin (2.1.1)
     rack (1.6.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -103,4 +121,5 @@ PLATFORMS
 
 DEPENDENCIES
   ecom!
+  mongoid!
   sqlite3
