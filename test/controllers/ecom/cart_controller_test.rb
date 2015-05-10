@@ -6,6 +6,5 @@ module Ecom
       get :show
       assert_response :success
     end
-
   end
 end
