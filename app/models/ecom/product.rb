@@ -10,5 +10,7 @@ module Ecom
 
     slug :name, history: true
     belongs_to :category
+    has_many :line_items
+    mount_uploader :image, ImageUploader
   end
 end
