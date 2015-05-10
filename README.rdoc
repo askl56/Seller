@@ -1,3 +1,3 @@
-= Ecom
+= Seller
 
-This project rocks and uses MIT-LICENSE.
+An ecommerce engine for Rails
