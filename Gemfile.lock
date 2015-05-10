@@ -1,4 +1,14 @@
 GIT
+  remote: git://github.com/jnicklas/carrierwave.git
+  revision: 01f7ec68d0403dfeec13e5f177ffa7e272b230aa
+  specs:
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
+
+GIT
   remote: git://github.com/mongoid/mongoid.git
   revision: 70453659ca4eb26d00adc5aead28d5e6b66b21b3
   specs:
@@ -125,6 +135,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  carrierwave!
   ecom!
   mongoid!
   mongoid-slug
