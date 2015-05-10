@@ -1,24 +1,27 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @product.name %>
+  <h2><%= @product.name %></h2>
 </p>
 
 <p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Base price:</strong>
-  <%= @product.base_price %>
-</p>
-
-<p>
-  <strong>Sku:</strong>
+  <strong>Sku:&nbsp;</strong>
   <%= @product.sku %>
 </p>
 
+<p>
+  <strong>Price:&nbsp;</strong>
+  <%= @product.base_price %>
+</p>
+
+<br/>
+<p>
+  <%=image_tag @product.image.url %>
+</p>
+
+<p><%=link_to( image_tag("ecom/add-to-cart-button.png"), add_to_cart_path(@product.id)) %></p>
+
+<!--<%if user_signed_in? %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+<% end %>-->

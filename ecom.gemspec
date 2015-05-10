@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["amscott@openmailbox.org"]
   s.homepage    = "http://github.com/askl56/Seller"
   s.summary     = "A rails engine for ecommerce"
-  s.description = "TODO: Description of Ecom."
+  s.description = "A complete ecommerce application within a gem"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
@@ -20,6 +20,8 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 4.2.1"
   s.add_dependency "mongoid", '4.0.2'
   s.add_dependency "devise"
+  s.add_dependency "mongoid_slug"
+  s.add_dependency "carrierwave"
 
   s.add_development_dependency "sqlite3"
 end
