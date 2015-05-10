@@ -1,8 +1,4 @@
 source 'https://rubygems.org'
-gem 'mongoid',  github: 'mongoid/mongoid'
-gem 'mongoid-slug'
-gem 'carrierwave', :github => "jnicklas/carrierwave"
-gem 'devise'
 
 # Declare your gem's dependencies in ecom.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
