@@ -7,6 +7,7 @@ module Ecom
     field :base_price, type: Float
     field :sku, type: String
     field :category_id, type: String
+    field :image, type: String
 
     slug :name, history: true
     belongs_to :category
