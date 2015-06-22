@@ -1,4 +1,4 @@
-require_dependency "ecom/application_controller"
+require_dependency 'ecom/application_controller'
 
 module Ecom
   class CartController < ApplicationController
@@ -12,7 +12,7 @@ module Ecom
       item = LineItem.new
       item.make_items(@cart.id, product.id, product.base_price)
       @cart.recalculate_price!
-      flash[:notice] = "Product Added to Cart"
+      flash[:notice] = 'Product Added to Cart'
       redirect_to cart_path
     end
 
@@ -20,7 +20,7 @@ module Ecom
       item = @cart.line_items.find(params[:id])
       item.destroy
       @cart.recalculate_price!
-      flash[:notice] = "Product Deleted from Cart"
+      flash[:notice] = 'Product Deleted from Cart'
       redirect_to cart_path
     end
 
