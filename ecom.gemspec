@@ -23,5 +23,4 @@ Gem::Specification.new do |s|
   s.add_dependency 'mongoid-slug'
   s.add_dependency 'carrierwave'
   s.add_dependency 'carrierwave-mongoid'
-  s.add_dependency 'rubocop'
 end
